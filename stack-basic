@@ -1,0 +1,25 @@
+//push 7 elements into stack and pop 2 elements and print peak element
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+
+  stack<int>st;
+  for( int i=1;i<=7;i++)
+  {
+      st.push(i);
+  }
+ 
+  st.pop();
+  st.pop();
+  int peakEL=st.top();
+  cout<<peakEL<<endl;
+  
+ int n=st.size();
+ while(!st.empty()){
+    cout<<st.top()<<endl;
+   st.pop();
+ }
+  return 0;
+}
